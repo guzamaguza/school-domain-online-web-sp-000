@@ -24,7 +24,7 @@ class School
   end
 
   def sort(array)
-    array.sort_by { |key, val| key }
+    return array.sort_by { |key, val| key }
   end
 
 end
