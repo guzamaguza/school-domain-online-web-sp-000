@@ -27,5 +27,4 @@ class School
     #@roster.sort_by { |key, val| key }.to_h
     sorted_by_key = Hash[@roster.sort_by {|key,val| key}.to_h]
   end
-
 end
