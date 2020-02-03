@@ -24,7 +24,11 @@ class School
   end
 
   def sort
-    #@roster.sort_by { |key, val| key }.to_h
-    sorted_by_key = Hash[@roster.sort_by {|key,val| key}.to_h]
+    new_hash = {}
+    @roster.each do |key, val|
+      new_hash[key] = val.sort
+    end
+    return new_hash
+    #sorted_by_key = Hash[@roster.sort_by {|key,val| key}.to_h]
   end
 end
